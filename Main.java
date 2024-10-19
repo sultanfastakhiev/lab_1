@@ -1,7 +1,7 @@
 import static java.lang.Math.*;
 
 public class Main {
-    public static double calcElement(short z, float x){
+    static double calcElement(short z, float x){
         if (z == 15){
             return cos(cos(sin(x)));
         }
@@ -11,7 +11,7 @@ public class Main {
         return cos((1 - cos(tan(x))) / (sin(atan((x - 0.5) / 7))));
     }
 
-    public static void outPutResponseArray(double[][] z1) {
+    static void outPutResponseArray(double[][] z1) {
         for (var i = 0; i < 11; i++) {
             for (var j = 0; j < 12; j++){
                 System.out.print("|");
@@ -45,5 +45,5 @@ public class Main {
         }
         }
         outPutResponseArray(z1);
-}
+    }
 }
