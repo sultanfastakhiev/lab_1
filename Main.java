@@ -6,7 +6,7 @@ public class Main {
             return cos(cos(sin(x)));
         }
         if (z == 7 || z == 11 || z == 17 || z == 21 || z == 23){
-            return asin(exp(-cbrt(-abs(x))));
+            return asin(exp(cbrt(-abs(x))));
         }
         return cos((1 - cos(tan(x))) / (sin(atan((x - 0.5) / 7))));
     }
