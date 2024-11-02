@@ -1,14 +1,13 @@
-import static java.lang.Math.*;
 
 public class Main {
     static double calcElement(short z, float x){
         if (z == 15){
-            return cos(cos(sin(x)));
+            return Math.cos(Math.cos(Math.sin(x)));
         }
         if (z == 7 || z == 11 || z == 17 || z == 21 || z == 23){
-            return asin(exp(cbrt(-abs(x))));
+            return Math.asin(Math.exp(Math.cbrt(-Math.abs(x))));
         }
-        return cos((1 - cos(tan(x))) / (sin(atan((x - 0.5) / 7))));
+        return Math.cos((1 - Math.cos(Math.tan(x))) / (Math.sin(Math.atan((x - 0.5) / 7))));
     }
 
     static void outPutResponseArray(double[][] z1) {
@@ -34,7 +33,7 @@ public class Main {
 
         float[] x = new float[12];
         for (var i = 0; i < x.length; i++) {
-            double doubleRandom = -4.0f + random() * (3.0f - -4.0f);
+            double doubleRandom = -4.0 + Math.random() * (3.0 - -4.0);
             x[i] = (float) doubleRandom;
         }
 
